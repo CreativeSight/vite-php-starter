@@ -1,6 +1,5 @@
 import { defineConfig } from 'vite';
 import eslint from 'vite-plugin-eslint';
-import usePHP from 'vite-plugin-php';
 
 export default defineConfig({
   publicDir: 'public',
@@ -10,7 +9,6 @@ export default defineConfig({
       cache: false,
       fix: true,
     }),
-    usePHP(),
   ],
   server: {
     // serve index.php in development
